@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <style>
+        *{
+            text-align: center;
+        }
+
+        h1{
+            font-size: 70px;
+            margin: 60px;
+        }
+
+        h2{
+            margin: 30px;
+        }
+
+        img{
+            height: 250px;
+        }
+
+        .etiqueta{
+            display: block;
+        }
+
+        input{
+            margin: 0 auto;
+            margin-bottom: 40px;    
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Urna Eletrônica</h1>
+            <img src="assets/perfil_avatar.png" alt="Foto do Candidato">
+            <h2>Carlinhos do Povo</h2>
+            <label for=""></label>
+            <input type="number" class="etiqueta" name="nmCandidato" id="idCandidato" min="1" max="99" title="Digite o número do candidato" 
+                placeholder="NumCand" autofocus autocomplete="off" required>
+            <button type="submit">Confirmar</button>
+            <button type="reset">Cancelar</button>
+            <!--Para o botão do voto em branco deverá ser configurado através de JS <script> para envio do valor em branco-->
+            <button type="button" value="">Branco</button>
+        </fieldset>
+    </form>
+</body>
+</html>

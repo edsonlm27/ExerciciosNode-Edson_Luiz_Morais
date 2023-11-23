@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroAluno</title>
+    <style>
+        .etiqueta{
+            display: block;
+        }
+
+        .etiqueta2{
+            display: block;
+            margin-top: 10px;
+        }
+
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset><legend>Cadastro de Aluno</legend>
+            <label for="idNome" class="etiqueta">Nome</label>
+            <input type="text" name="nmNome" id="idNome" autofocus required>
+            <label for="idSobrenome" class="etiqueta">Sobrenome</label>
+            <input type="text" name="nmSobrenome" id="idSobrenome" required>
+            <label for="idDataNascimento" class="etiqueta">Data de Nascimento</label>
+            <input type="date" name="nmDataNascimento" id="idDataNascimento" title="Insira uma data entre 01/01/200 e 31/12/2017" min="2000-01-01" max="2017-12-31" required >
+            <label for="idEndereco" class="etiqueta">Endereço</label>
+            <input type="text" name="nmEndereco" id="isEndereco" required>
+            <label for="idNomeMae" class="etiqueta">Nome da Mãe</label>
+            <input type="text" name="nmNomeMae" id="idNomeMae" required>
+            <label for="idNomePai" class="etiqueta">Nome do Pai</label>
+            <input type="text" name="nmNomePai" id="idNomePai" required>
+            <label for="idEmail" class="etiqueta">E-mail</label>
+            <input type="email" name="nmEmail" id="idEmail" required>
+            <label for="idTel" class="etiqueta">Tel</label>
+            <input type="text" name="nmTel" id="idTel" required>
+            <label for="idSerie" class="etiqueta">Série</label>
+            <input type="number" name="nmSerie" id="idSerie" title="Insira um valor entre 1 a 9" min="1" max="9" required>
+            <!-- Radio Button -->
+            <label for="idSexo" class="etiqueta">Sexo</label>
+            <input type="radio" name="nmSexo" id="idFem" checked>
+            <label for="idFem">Feminino </label>
+            <br>
+            <input type="radio" name="nmSexo" id="idMasc">
+            <label for="idMasc">Masculino</label>
+            <!-- Checkbox -->
+            <label for="idNecEspeciais" class="etiqueta2">Necessidades Especiais</label>
+            <input type="checkbox" name="nmNecEspeciais" id="idDefAudit">
+            <label for="idDefAudit">Deficiência Auditiva</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idDefMot">
+            <label for="idDefMot">Deficiência Motora</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idDefVis">
+            <label for="idDefVis">Deficiência Visual</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idParalCer">
+            <label for="idParalCer">Paralisia Cerebral</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idPertEspAut">
+            <label for="idPertEspAut">Perturbação do Espectro Autista</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idPertForoPsic">
+            <label for="idPertForoPsic">Perturbação do Foro Psicológico</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idPertAprend">
+            <label for="idPertAprend">Perturbações de Aprendizagem</label>
+            <br>
+            <input type="checkbox" name="nmNecEspeciais" id="idAltHabil">
+            <label for="idAltHabil">Altas Habilidades</label>
+            <br>
+            <br>
+            <!-- Botões -->
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar Tela</button>
+        </fieldset>
+    </form>
+</body>
+</html>
