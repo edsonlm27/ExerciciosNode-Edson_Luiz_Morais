@@ -18,13 +18,14 @@ class AutorController {
 
   // Salvar novo registro (post)
   store(req, res) {
-    autors.push(req.body);
+    getAutors().push(req.body);
     res.status(201).send("Autor cadastrado com sucesso!");
   }
 
   // Atualizar registro (update)
   update(req, res) {
     let indexAutor = buscarIndexAutorPorId(req.params.id);
+    let autors = getAutors();
     autors[indexAutor].nome = req.body.nome;
     autors[indexAutor].ano = req.body.ano;
     autors[indexAutor].contribuicao = req.body.contribuicao;
@@ -34,7 +35,7 @@ class AutorController {
   // Deletar registro (delete)
   delete(req, res) {
     let indexAutor = buscarIndexAutorPorId(req.params.id);
-    autors.splice(indexAutor, 1);
+    getAutors().splice(indexAutor, 1);
     res.status(200).send(`Autor ${req.params.id} excluído com sucesso!`);
   }
 }
